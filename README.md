@@ -1,8 +1,35 @@
-# React + Vite
+# StoreHippo Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the StoreHippo Website repository! This repository contains both the frontend and backend code for the StoreHippo website.
 
-Currently, two official plugins are available:
+## Frontend
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The frontend of the StoreHippo website is hosted on Netlify and can be accessed at the following URL:
+[StoreHippo Frontend](http://storehippo.netlify.app)
+
+## Backend
+
+The backend of the StoreHippo website is hosted on Render and can be accessed at the following URL:
+[StoreHippo Backend](https://storehippo.onrender.com)
+
+### Backend Routes
+
+There are two main routes in the backend:
+
+1. **Users**
+   - `/signup`: Endpoint for user signup.
+   - `/login`: Endpoint for user login.
+   - `/logout`: Endpoint for user logout.
+
+2. **Products**
+   - `/products`: Endpoint to get all products.
+   - `/products/create`: Endpoint to create a new product.
+
+## Getting Started
+
+To get started with the development, you can follow these steps:
+
+1. Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/shrikantNemiwal1/storehippo.git
