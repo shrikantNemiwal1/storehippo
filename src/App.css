@@ -66,12 +66,18 @@ body::-webkit-scrollbar-thumb {
   z-index: 99999;
   text-transform: uppercase;
   opacity: 0;
-  transition: all .3s;
+  transition: all 0.3s;
   visibility: hidden;
 }
 
 .fusion-btn--visible {
   opacity: 1;
-  transition: all .3s;
+  transition: all 0.3s;
   visibility: visible;
+}
+
+@media screen and (max-width: 700px) {
+  .fusion-btn {
+    display: none;
+  }
 }

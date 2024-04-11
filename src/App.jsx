@@ -13,7 +13,7 @@ function App() {
 
   const getAllProducts = async () => {
     try {
-      const res = await fetch("http://localhost:3000/products/get-all", {
+      const res = await fetch("https://storehippo.onrender.com/products/get-all", {
         method: "GET",
       });
       const data = await res.json();
