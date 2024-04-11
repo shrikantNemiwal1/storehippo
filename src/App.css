@@ -1,0 +1,77 @@
+.btn-primary {
+  position: relative;
+  background-color: var(--color-primary);
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 30px;
+  padding: 9px 30px;
+  min-width: 140px;
+  font-size: 1rem;
+  border: 1px solid var(--color-primary);
+  z-index: 1;
+}
+
+.btn-primary::after {
+  content: "";
+  background-color: #fff;
+  width: 0%;
+  height: 100%;
+  border-radius: 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+  z-index: -1;
+}
+
+.btn-primary:hover {
+  color: var(--color-primary);
+  background-color: transparent;
+}
+.btn-primary:hover::after {
+  width: 100%;
+  transition: all 0.3s;
+}
+
+button {
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+body::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.4);
+  background-color: var(--color-primary);
+  border-radius: 10px;
+}
+
+.fusion-btn {
+  position: fixed;
+  font-size: 1.2rem;
+  right: 0;
+  top: 50%;
+  transform: rotate(-90deg) translateY(170%);
+  background-color: var(--color-primary);
+  padding: 0.5rem 1rem;
+  color: #ffffff;
+  border-radius: 5px 5px 0 0;
+  z-index: 99999;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: all .3s;
+  visibility: hidden;
+}
+
+.fusion-btn--visible {
+  opacity: 1;
+  transition: all .3s;
+  visibility: visible;
+}

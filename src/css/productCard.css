@@ -1,0 +1,130 @@
+.products{
+  margin-bottom: 4rem;
+}
+
+.products h1{
+  font-size: 2rem;
+  text-align: center;
+}
+
+.products__section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+.product__card {
+  width: 300px;
+  position: relative;
+  box-shadow: 0 2px 7px #dfdfdf;
+  margin: 20px;
+  background: #fafafa;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  top: 20px;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 700;
+  background: red;
+  color: #fff;
+  padding: 3px 10px;
+}
+
+.product__tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  background: #f0f0f0;
+}
+
+.product__tumb img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product__details {
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.product__catagory {
+  display: block;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ccc;
+  margin-bottom: 0px;
+}
+.product__details h4 {
+  margin: 10px 0;
+}
+
+.product__details h4 a {
+  font-weight: 500;
+  display: block;
+  text-transform: uppercase;
+  color: #363636;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.product__details h4 a:hover {
+  color: var(--color-primary);
+}
+
+.product__details p {
+  font-size: 15px;
+  line-height: 22px;
+  margin-bottom: 18px;
+  color: #999;
+}
+
+.product__bottom-details {
+  overflow: hidden;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+}
+
+.product__bottom-details div {
+  float: left;
+  width: 50%;
+}
+
+.product__price {
+  font-size: 18px;
+  color: var(--color-primary);
+  font-weight: 600;
+}
+
+.product__price small {
+  font-size: 80%;
+  font-weight: 400;
+  text-decoration: line-through;
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.product__links {
+  text-align: right;
+}
+
+.product__links a {
+  display: inline-block;
+  margin-left: 5px;
+  color: #e1e1e1;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+.product__links a:hover {
+  color: var(--color-primary);
+}

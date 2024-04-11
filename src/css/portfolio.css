@@ -1,0 +1,155 @@
+.portfolio {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+  overflow: hidden;
+}
+
+.portfolio h1 {
+  font-size: 2rem;
+  max-width: 45rem;
+  margin-bottom: 0rem;
+}
+
+.portfolio h4 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.portfolio img {
+  max-width: 70vw;
+}
+
+.slick-slider {
+  max-width: 90%;
+}
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: var(--color-primary);
+  padding: 0.3rem;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at center,
+    transparent 0%,
+    transparent 34%,
+    var(--color-primary) 34%,
+    var(--color-primary) 100%
+  );
+}
+
+.slider__slide {
+  display: flex !important;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.slide__icon {
+  width: 120px;
+  height: 120px;
+}
+
+.slide__content {
+  display: flex;
+  gap: 1rem;
+  text-align: start;
+}
+
+.slide__text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.slide__text p:first-child {
+  font-size: 1.15rem;
+  font-weight: 500;
+}
+
+.slide__image {
+  width: 50%;
+}
+
+.slide__text-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.slide__text-grid div {
+  padding: 1rem;
+  text-align: start;
+}
+
+.slide__text-grid h3 {
+  font-size: 1rem;
+  font-weight: 550;
+  margin: 0;
+  margin-bottom: 0.5rem;
+}
+
+.slide__text-grid p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.slide__text-grid div:nth-child(1) {
+  border-bottom: 1px solid #eee;
+  border-right: 1px solid #eee;
+}
+
+.slide__text-grid div:nth-child(4) {
+  border-top: 1px solid #eee;
+  border-left: 1px solid #eee;
+}
+
+.slide__link{
+    display: flex;
+    color: var(--color-primary);
+    gap: .5rem;
+    align-self: flex-end;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+@media screen and (max-width: 1000px) {
+  .portfolio img {
+    max-width: 90vw;
+  }
+  .slider__slide {
+    align-items: center;
+  }
+  .slide__content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .slide__text {
+    width: 100%;
+    text-align: center;
+    max-width: 90%;
+  }
+  .slide__image {
+    width: 100%;
+  }
+  .slide__text-grid {
+    display: none;
+  }
+  .slick-prev:before,
+  .slick-next:before {
+    display: none;
+  }
+  .slide__link{
+    align-self: center;
+  }
+}

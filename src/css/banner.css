@@ -1,0 +1,97 @@
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 85vh;
+  background-image: url("https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.files/new-home/sliders-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+.banner__image {
+  max-height: 553px;
+  align-self: flex-end;
+  margin-left: 3rem;
+}
+
+.banner__image img {
+  height: 553px;
+  max-height: 553px;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner__text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 50%;
+  max-width: 40%;
+  background-image: url("https://cdn1.storehippo.com/s/5667e7d63086b2e718049ad9/ms.files/new-home/slide-text-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-right: 3rem;
+  padding: 4rem 0;
+}
+
+.banner__text h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.banner__text h3 {
+  font-size: 1.35rem;
+  margin: 0.5rem 0;
+}
+
+.banner__text p {
+  font-size: 1.3rem;
+  margin: 1rem 0 2rem 0;
+}
+
+.text__primary {
+  color: var(--color-primary);
+}
+
+.blinking-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .banner__text h1{
+    font-size: 2rem;
+  }
+  .banner {
+    background: none;
+    height: 70vh;
+  }
+  .banner__image {
+    display: none;
+  }
+  .banner__text {
+    margin: 0;
+    max-width: unset;
+    max-width: unset;
+    width: 100%;
+    max-width: 600px;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    padding-top: 4rem;
+  }
+}
