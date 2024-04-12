@@ -22,7 +22,7 @@ There are two main routes in the backend:
    - `/logout`: Endpoint for user logout.
 
 2. **Products**
-   - `/products`: Endpoint to get all products.
+   - `/products/get-all`: Endpoint to get all products.
    - `/products/create`: Endpoint to create a new product.
 
 ## Getting Started
